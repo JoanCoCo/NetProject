@@ -26,6 +26,7 @@ public class Player : NetworkBehaviour
     }
 
     [ClientRpc] void RpcOnChangeColor(Color c) {
+        color = c;
         SyncColor();
     }
 
